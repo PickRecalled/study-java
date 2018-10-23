@@ -1,5 +1,8 @@
 package com.pickrecalled.juc;
 
+/**
+ * volatile 关键字与内存可见性
+ */
 public class TestVolatile {
 
 	public static void main(String[] args) {
