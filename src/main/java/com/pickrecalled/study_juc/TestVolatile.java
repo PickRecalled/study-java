@@ -1,4 +1,4 @@
-package com.pickrecalled.juc;
+package com.pickrecalled.study_juc;
 
 /**
  * volatile 关键字与内存可见性

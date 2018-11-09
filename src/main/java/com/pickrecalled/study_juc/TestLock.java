@@ -1,4 +1,4 @@
-package com.pickrecalled.juc;
+package com.pickrecalled.study_juc;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

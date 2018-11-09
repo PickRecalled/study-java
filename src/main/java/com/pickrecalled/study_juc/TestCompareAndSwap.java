@@ -1,4 +1,4 @@
-package com.pickrecalled.juc;
+package com.pickrecalled.study_juc;
 
 /**
  * 模拟CAS算法
