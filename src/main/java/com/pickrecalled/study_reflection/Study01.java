@@ -1,4 +1,4 @@
-package com.pickrecalled.reflection;
+package com.pickrecalled.study_reflection;
 
 import org.junit.jupiter.api.Test;
 

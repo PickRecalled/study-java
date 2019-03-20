@@ -1,4 +1,4 @@
-package com.pickrecalled.reflection;
+package com.pickrecalled.study_reflection;
 
 public class Person {
 
