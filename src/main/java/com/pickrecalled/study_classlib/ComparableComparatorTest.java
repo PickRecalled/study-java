@@ -60,7 +60,7 @@ public class ComparableComparatorTest {
 	}
 
 	/**
-	 * 测试字符对象串排序
+	 * 测试字符对象串 排序
 	 */
 	@Test
 	public void stringComparableTest() {
