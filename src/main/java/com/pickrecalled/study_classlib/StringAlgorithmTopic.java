@@ -1,8 +1,7 @@
 package com.pickrecalled.study_classlib;
 
-import org.apache.pdfbox.util.StringUtil;
-import org.junit.jupiter.api.Test;
-import org.junit.platform.commons.util.StringUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.junit.Test;
 
 import java.util.Arrays;
 
@@ -11,31 +10,31 @@ import java.util.Arrays;
  */
 public class StringAlgorithmTopic {
 
-    public String[] getMaxSameSubString1(String str1, String str2) {
-        if (str1 != null && str2 != null) {
-            StringBuffer sBuffer = new StringBuffer();
-            String maxString = (str1.length() > str2.length()) ? str1 : str2;
-            String minString = (str1.length() > str2.length()) ? str2 : str1;
+	public String[] getMaxSameSubString1(String str1, String str2) {
+		if (str1 != null && str2 != null) {
+			StringBuffer sBuffer = new StringBuffer();
+			String maxString = (str1.length() > str2.length()) ? str1 : str2;
+			String minString = (str1.length() > str2.length()) ? str2 : str1;
 
-            int len = minString.length();
-            for (int i = 0; i < len; i++) {
-                for (int x = 0, y = len - i; y <= len; x++, y++) {
-                    String subString = minString.substring(x, y);
-                    if (maxString.contains(subString)) {
-                        sBuffer.append(subString + ",");
-                    }
-                }
-                System.out.println(sBuffer);
-                if (sBuffer.length() != 0) {
-                    break;
-                }
-            }
-            String[] split = sBuffer.toString().replaceAll(",$", "").split("\\,");
-            return split;
-        }
+			int len = minString.length();
+			for (int i = 0; i < len; i++) {
+				for (int x = 0, y = len - i; y <= len; x++, y++) {
+					String subString = minString.substring(x, y);
+					if (maxString.contains(subString)) {
+						sBuffer.append(subString + ",");
+					}
+				}
+				System.out.println(sBuffer);
+				if (sBuffer.length() != 0) {
+					break;
+				}
+			}
+			String[] split = sBuffer.toString().replaceAll(",$", "").split("\\,");
+			return split;
+		}
 
-        return null;
-    }
+		return null;
+	}
 
 	/**
 	 * 获取两个字符串中最大相同子串。比如:str1 = "abcwerthelloyuiodef";str2 = "cvhellobnm" 。 <br>
@@ -68,13 +67,13 @@ public class StringAlgorithmTopic {
 	@Test
 	public void getMaxSameWordTest() {
 		String maxSameWord[] = getMaxSameWord("abcwerthelloyuiodefabcd", "cvhellobnmabcd");
-        String[] maxSameSubString1 = getMaxSameSubString1("abcwerthelloyuiodefabcd", "cvhellobnmabcd");
-        System.out.println(Arrays.toString(maxSameSubString1));
+		String[] maxSameSubString1 = getMaxSameSubString1("abcwerthelloyuiodefabcd", "cvhellobnmabcd");
+		System.out.println(Arrays.toString(maxSameSubString1));
 
-        String str1 = "abcwerthelloyuiodef";
-        String str2 = "cvhellobnmiodef";
-        String[] strs = getMaxSameSubString1(str1, str2);
-        System.out.println(Arrays.toString(strs));
+		String str1 = "abcwerthelloyuiodef";
+		String str2 = "cvhellobnmiodef";
+		String[] strs = getMaxSameSubString1(str1, str2);
+		System.out.println(Arrays.toString(strs));
 	}
 
 	/**

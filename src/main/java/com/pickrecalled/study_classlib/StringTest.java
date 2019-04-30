@@ -1,6 +1,6 @@
 package com.pickrecalled.study_classlib;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  *

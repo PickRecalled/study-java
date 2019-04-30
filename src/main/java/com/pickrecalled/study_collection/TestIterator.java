@@ -1,8 +1,11 @@
 package com.pickrecalled.study_collection;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+import java.util.Iterator;
 
 public class TestIterator {
 
