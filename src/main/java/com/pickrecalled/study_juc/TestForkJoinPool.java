@@ -1,6 +1,7 @@
 package com.pickrecalled.study_juc;
 
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 import java.time.Duration;
 import java.time.Instant;

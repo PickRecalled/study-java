@@ -1,5 +1,6 @@
 package com.pickrecalled.study_thread;
 
+
 import sun.nio.ch.ThreadPool;
 
 import java.util.concurrent.ConcurrentHashMap;
@@ -16,7 +17,6 @@ public class ThreadPoolFactory {
 	private static long keepAliveTime = 10;
 	// 队列最大数
 	private static int queueMaxSize = 10000;
-
 	private ConcurrentHashMap<String, ThreadPool> threadMap;
 
 	public ThreadPoolFactory() {
