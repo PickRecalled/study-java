@@ -1,4 +1,4 @@
-package com.pickrecalled.study_29_java8;
+package com.pickrecalled.study_29_java8.lambda;
 
 /**
  * 自定义函数式接口

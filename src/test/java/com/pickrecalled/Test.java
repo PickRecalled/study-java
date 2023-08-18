@@ -1,5 +1,9 @@
 package com.pickrecalled;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 public class Test {
 	public static void main(String[] args) {
 		long bt = System.currentTimeMillis();
@@ -33,4 +37,37 @@ public class Test {
 
 		System.out.println("消耗时间：" + (System.currentTimeMillis() - bt));
 	}
+
+
+	@org.junit.Test
+	public void test01(){
+		List<String> list = new ArrayList<>();
+		list.add("b:svr:auz:");
+		list.add("b:svr:auz:v::");
+		// 用户授权设备
+		list.add("b:svr:auz:d::");
+
+
+		List<String> list2 = new ArrayList<>();
+		list2.add("b:svr:auz:1133.55::4");
+		list2.add("b:svr:auz:v::7:1");
+		list2.add("b:svr:auz:d::99:1");
+
+		for (String s : list2) {
+			for (String s1 : list) {
+				String substring = s.substring(0, s1.length());
+				if(substring.contains(s1)){
+					System.out.println(s);
+				}
+			}
+//			if(list.contains(s)){
+//				System.out.println(s);
+//			}else{
+//				System.out.println("----------");
+//			}
+		}
+	}
+
+
+
 }
